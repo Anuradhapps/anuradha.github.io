@@ -231,8 +231,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
             <div class="flex items-center justify-between h-20">
                 <a href="#"
-                    class="text-2xl font-bold tracking-tighter text-white z-50 hover:scale-105 transition-transform">
-                    Darsha<span class="text-primary">.</span>
+                    class="relative text-2xl font-bold tracking-tighter text-white z-50 hover:scale-105 transition-transform">
+                    Anuradha<span class="text-primary">.</span>
                 </a>
 
                 <!-- Desktop Menu -->
@@ -269,7 +269,7 @@
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button class="md:hidden text-slate-300 hover:text-white z-50 focus:outline-none p-2"
+                <button class="relative md:hidden text-slate-300 hover:text-white z-50 focus:outline-none p-2"
                     id="mobile-menu-btn">
                     <i class="fa-solid fa-bars text-2xl"></i>
                 </button>
@@ -277,7 +277,7 @@
         </div>
 
         <!-- Mobile Menu Overlay -->
-        <div class="fixed inset-0 bg-darker/98 backdrop-blur-xl z-40 hidden flex-col items-center justify-center space-y-6 opacity-0 transition-opacity duration-300"
+        <div class="fixed inset-0 bg-darker/95 backdrop-blur-xl z-40 hidden flex-col items-center justify-center space-y-6 opacity-0 transition-opacity duration-300"
             id="mobile-menu">
             <a href="#home"
                 class="mobile-link text-2xl font-semibold text-slate-300 hover:text-primary transition-colors hover:scale-110 transform duration-200">Home</a>
@@ -1025,97 +1025,53 @@
                         class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/20 rounded-full filter blur-[100px] pointer-events-none">
                     </div>
 
-                    <div class="grid lg:grid-cols-2 gap-12 relative z-10">
-                        <div>
-                            <h2 class="text-xs sm:text-sm font-bold tracking-widest text-primary uppercase mb-2">Connect
-                            </h2>
-                            <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">Let's
-                                build something together.</h3>
-                            <p class="text-slate-400 mb-8 leading-relaxed text-sm sm:text-base">
-                                Whether you have a project in mind, need technical consultancy, or just want to say hi,
-                                my inbox is open. I am currently looking for new opportunities!
-                            </p>
+                    <div class="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto">
+                        <h2 class="text-xs sm:text-sm font-bold tracking-widest text-primary uppercase mb-2">Connect
+                        </h2>
+                        <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">Let's build
+                            something together.</h3>
+                        <p class="text-slate-400 mb-12 leading-relaxed text-sm sm:text-base">
+                            Whether you have a project in mind, need technical consultancy, or just want to say hi, my
+                            inbox is open. I am currently looking for new opportunities!
+                        </p>
 
-                            <div class="space-y-6">
-                                <a href="mailto:darsha.anuradha2020@gmail.com" class="flex items-center group">
-                                    <div
-                                        class="w-12 h-12 glass rounded-full flex items-center justify-center text-primary mr-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                                        <i class="fa-solid fa-envelope"></i>
-                                    </div>
-                                    <div>
-                                        <p class="text-xs text-slate-500 uppercase tracking-wider">Email Me</p>
-                                        <p
-                                            class="text-white font-medium group-hover:text-primary transition-colors truncate">
-                                            darsha.anuradha2020@gmail.com</p>
-                                    </div>
-                                </a>
-                                <a href="tel:+940718931240" class="flex items-center group">
-                                    <div
-                                        class="w-12 h-12 glass rounded-full flex items-center justify-center text-primary mr-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                                        <i class="fa-solid fa-phone"></i>
-                                    </div>
-                                    <div>
-                                        <p class="text-xs text-slate-500 uppercase tracking-wider">Call Me</p>
-                                        <p class="text-white font-medium group-hover:text-primary transition-colors">071
-                                            893 1240</p>
-                                    </div>
-                                </a>
-                                <div class="flex items-center">
-                                    <div
-                                        class="w-12 h-12 glass rounded-full flex items-center justify-center text-primary mr-4">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                    </div>
-                                    <div>
-                                        <p class="text-xs text-slate-500 uppercase tracking-wider">Location</p>
-                                        <p class="text-white font-medium">Katugastota, Sri Lanka</p>
-                                    </div>
+                        <div class="grid sm:grid-cols-3 gap-6 w-full">
+                            <!-- Email Card -->
+                            <a href="mailto:darsha.anuradha2020@gmail.com"
+                                class="glass-card p-6 rounded-2xl flex flex-col items-center group tilt-element hover:-translate-y-2 transition-transform">
+                                <div
+                                    class="w-14 h-14 bg-primary/20 rounded-full flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                                    <i class="fa-solid fa-envelope text-xl"></i>
                                 </div>
+                                <p class="text-xs text-slate-500 uppercase tracking-wider mb-2">Email Me</p>
+                                <p
+                                    class="text-white font-medium text-sm group-hover:text-primary transition-colors break-all">
+                                    darsha.anuradha2020<br>@gmail.com</p>
+                            </a>
+
+                            <!-- Phone Card -->
+                            <a href="tel:+940718931240"
+                                class="glass-card p-6 rounded-2xl flex flex-col items-center group tilt-element hover:-translate-y-2 transition-transform">
+                                <div
+                                    class="w-14 h-14 bg-primary/20 rounded-full flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                                    <i class="fa-solid fa-phone text-xl"></i>
+                                </div>
+                                <p class="text-xs text-slate-500 uppercase tracking-wider mb-2">Call Me</p>
+                                <p class="text-white font-medium text-sm group-hover:text-primary transition-colors">071
+                                    893 1240</p>
+                            </a>
+
+                            <!-- Location Card -->
+                            <div
+                                class="glass-card p-6 rounded-2xl flex flex-col items-center tilt-element hover:-translate-y-2 transition-transform">
+                                <div
+                                    class="w-14 h-14 bg-primary/20 rounded-full flex items-center justify-center text-primary mb-4">
+                                    <i class="fa-solid fa-location-dot text-xl"></i>
+                                </div>
+                                <p class="text-xs text-slate-500 uppercase tracking-wider mb-2">Location</p>
+                                <p class="text-white font-medium text-sm text-center">Katugastota,<br>Sri Lanka</p>
                             </div>
                         </div>
-
-                        <!-- Contact Form -->
-                        <!-- <form onsubmit="event.preventDefault(); showMessage();"
-                            class="space-y-5 bg-darker/40 p-6 sm:p-8 rounded-2xl border border-white/5 backdrop-blur-sm">
-                            <div class="grid sm:grid-cols-2 gap-5">
-                                <div>
-                                    <label
-                                        class="block text-xs font-medium text-slate-400 mb-1.5 uppercase tracking-wide">Name</label>
-                                    <input type="text" required
-                                        class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all placeholder-slate-600"
-                                        placeholder="John Doe">
-                                </div>
-                                <div>
-                                    <label
-                                        class="block text-xs font-medium text-slate-400 mb-1.5 uppercase tracking-wide">Email</label>
-                                    <input type="email" required
-                                        class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all placeholder-slate-600"
-                                        placeholder="john@example.com">
-                                </div>
-                            </div>
-                            <div>
-                                <label
-                                    class="block text-xs font-medium text-slate-400 mb-1.5 uppercase tracking-wide">Subject</label>
-                                <input type="text" required
-                                    class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all placeholder-slate-600"
-                                    placeholder="Project Inquiry">
-                            </div>
-                            <div>
-                                <label
-                                    class="block text-xs font-medium text-slate-400 mb-1.5 uppercase tracking-wide">Message</label>
-                                <textarea required rows="4"
-                                    class="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all placeholder-slate-600 resize-none"
-                                    placeholder="Hello, I'd like to talk about..."></textarea>
-                            </div>
-                            <button type="submit"
-                                class="w-full py-4 bg-gradient-to-r from-primary to-secondary text-white font-bold rounded-lg hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all duration-300 flex justify-center items-center group hover:-translate-y-1">
-                                Send Message <i
-                                    class="fa-solid fa-paper-plane ml-2 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
-                            </button>
-
-                            <p id="form-success"
-                                class="text-emerald-400 text-sm text-center hidden mt-3 font-medium bg-emerald-500/10 py-2 rounded">
-                                Message sent successfully! I'll be in touch soon.</p>
-                        </form> -->
                     </div>
                 </div>
             </div>
@@ -1293,28 +1249,6 @@
                 el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
                 el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
             });
-        }
-
-        // Fake form submission feedback
-        function showMessage() {
-            const msg = document.getElementById('form-success');
-            const btn = document.querySelector('button[type="submit"]');
-            const originalText = btn.innerHTML;
-
-            btn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin ml-2"></i>';
-            btn.disabled = true;
-
-            setTimeout(() => {
-                msg.classList.remove('hidden');
-                btn.innerHTML = '<i class="fa-solid fa-check mr-2"></i> Sent Successfully';
-
-                setTimeout(() => {
-                    msg.classList.add('hidden');
-                    btn.innerHTML = originalText;
-                    btn.disabled = false;
-                    document.querySelector('form').reset();
-                }, 4000);
-            }, 1500);
         }
     </script>
 </body>
